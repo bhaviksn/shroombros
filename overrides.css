@@ -1,0 +1,468 @@
+.car-animation {
+	position: relative;
+	width: 100%;	
+	height: 360px;
+}
+
+.car-animation-bg {
+  position: absolute;
+	margin-top: -380px;
+  z-index: 0;
+  max-width: none;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.car-animation-path {
+	max-width: none;
+	width: 829px;
+}
+
+.car-path {
+	width: 420px;
+	max-width: 829px;
+	height: 107px;
+	position: absolute;
+	top:37px;
+	left: 0;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.car-path-container {
+	width: 829px;
+	height: 107px;
+	right: 50%;
+	margin-right: 165px;
+	position: absolute;
+}
+
+.car {
+	height: auto;
+	position:absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -262px;
+	z-index: 5;
+	transform: scale(.65) translateX(-700px) translateY(-150px);
+}
+
+.plane-animation {
+	position: relative;
+	width: 100%;	
+	height: 250px;
+	margin-bottom: -210px;
+}
+
+.plane-animation-bg {
+  position: absolute;
+	margin-top: -200px;
+  z-index: 0;
+  max-width: none;
+  left: 50%;
+  transform: translateX(-50%);
+	z-index: 10;
+}
+
+.plane {
+	position: absolute;
+	width: 1300px;
+  top: -182px;
+  left: 50%;
+  margin-left: -625px;
+  transform: translateY(-50%);
+	z-index: 10;
+}
+
+.woocommerce-checkout .banner, .woocommerce-cart .banner {
+	background-position: top center !important;
+	background-size: 2000px auto !important;
+	min-height: 800px;
+}
+
+.woocommerce-checkout .banner:after, .woocommerce-cart .banner:after {
+	content: "";
+	display: none !important;
+}
+
+.section.section--gray {
+	background-color: #E9E9E9 !important;
+}
+
+.accordion.accordion--faq {
+    position: relative;
+    z-index: 2;
+}
+
+.animated-banner-logo {
+	height: 340px;
+}
+
+
+.animated-banner-logo h1 {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.banner__description {
+	margin-top: -80px;
+}
+
+.trees-car {
+	width: 550px; 
+	height: auto; 
+	top: -286px; 
+	right: 50%;
+	margin-right: 395px;
+	position:absolute;
+}
+
+.shipping-counter {
+	color:#fff;
+	display: block;
+  padding: 1rem;
+  font-size: 15px;
+  margin-bottom: 1.5rem;
+  background: #1a1a31;
+  border-radius: 0.5rem;
+  font-weight: 400;
+}
+
+.shipping-counter .pink {
+	display: inline-block;
+	color:#ff3b8f;
+}
+
+.product-header__stage {
+	position: relative;
+}
+
+.product-header__thumbnail {
+	animation: MoveUpDown 5s linear infinite;
+  position: relative;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  
+  .car-animation-bg {
+    margin-lefT: 125px;
+  }
+
+  .car-path-container {
+    margin-right: 40px;
+  }
+  
+  .car {
+  	width: 300px;
+  	margin-left: -130px;
+  	top: 70px;
+  }
+  
+}
+
+/* Shroom Dose Calculator */
+
+.calculator {
+	background: url(images/form-bg.png) center center no-repeat;
+	width: 100%;
+	height: 754px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#shroom-dose-calculator {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+#weight {
+	width: 100%;
+	color: #fff;
+  border: 1px solid #fff;
+  background: #2a2f2d;
+  padding: 10px;
+  border-radius: 5px;    
+  margin: 30px 0 0;
+}
+
+label {
+	color: #fd3c94;
+}
+
+label[for="dose"] {
+	margin: 60px 0 30px
+}
+
+.doses {
+	display: block;
+	clear: both;
+}
+
+label.dose {
+	width: 24%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+label.dose span {
+	position: relative;
+	display: block;
+	height: 121px;
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #f6f4f4;
+	border-radius: 5px;
+	background: #2a2f2d;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+label.dose span:hover {
+	color: #000000;
+	background: rgb(139,232,246);
+	background: linear-gradient(180deg, rgba(139,232,246,1) 0%, rgba(54,210,229,1) 50%, rgba(139,232,246,1) 100%);
+}
+
+.ic {
+	width: 36px;
+	height: 36px;
+	display: block;
+  margin: 0 auto 15px auto;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.ic-micro {
+	background: url(images/micro-dose-icon.png) no-repeat;
+  background-size: 100% auto;
+}
+
+label.dose:hover .ic-micro,
+input[type="radio"]:checked + span .ic-micro  {
+	background-image: url(images/micro-dose-icon-hover.png);
+}
+
+.ic-low {
+	background-image: url(images/low-dose-icon-2.png);
+}
+
+label.dose:hover .ic-low,
+input[type="radio"]:checked + span .ic-low  {
+	background-image: url(images/low-dose-icon-hover-2.png);
+	background-size: 70% auto;
+}
+
+.ic-normal {
+	background-image: url(images/normal-dose-icon.png);
+}
+
+label.dose:hover .ic-normal,
+input[type="radio"]:checked + span .ic-normal  {
+	background-image: url(images/normal-dose-icon-hover.png);
+	background-size: 100% auto;
+}
+
+.ic-high {
+	background-image: url(images/high-dose-icon.png);
+}
+
+label.dose:hover .ic-high,
+input[type="radio"]:checked + span .ic-high  {
+	background-image: url(images/high-dose-icon-hover.png);
+}
+
+label input[type="radio"]:checked + span  {
+	color: #000000;
+	background: rgb(139,232,246);
+	background: linear-gradient(180deg, rgba(139,232,246,1) 0%, rgba(54,210,229,1) 50%, rgba(139,232,246,1) 100%);
+}
+
+input[type="radio"] + span:before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    opacity: 0;
+    margin-right: 0;
+    border: none;
+    display: none;
+    background-color: #f7f7f7;
+}
+
+input[type="radio"] + span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-radius: 0;
+    display: none;
+    background-color: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.shroom-dose-submit {
+	position: relative;
+	margin-top: 40px;
+	padding: 20px 80px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-radius: 10px !important;
+	border: none;
+	cursor: pointer;
+	background: rgb(248,89,174);
+	background: linear-gradient(180deg, rgba(248,89,174,1) 0%, rgba(250,74,161,1) 50%, rgba(255,59,143,1) 100%);
+}
+
+.shroom-dose-submit:before {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 17px;
+	position: absolute;
+	top: 35%;
+	right: 20px;
+	background-image: url(images/lets-calculate-icon.png);
+	background-repeat: no-repeat;
+}
+
+.shroom-dose-submit:hover {
+	background: rgb(248,89,174);
+	background: linear-gradient(180deg, rgba(250,74,161,1) 0%, rgba(248,89,174,1) 50%, rgba(255,59,143,1) 100%);
+}
+
+.results {
+	width: 160px;
+	position: relative;
+	margin: 40px auto 0;
+	padding: 20px 10px;
+	border: 1px solid #f6f4f4;
+	border-radius: 5px;
+	background: #2a2f2d;
+}
+
+.results:before {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 17px;
+	position: absolute;
+	top: 35%;
+	left: -40px;
+	background-image: url(images/grams-left.png);
+	background-repeat: no-repeat;
+}
+
+.results:after {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 17px;
+	position: absolute;
+	top: 35%;
+	right: -40px;
+	background-image: url(images/grams-right.png);
+	background-repeat: no-repeat;
+}
+
+.grams {
+	display: inline-block;
+	color: #fff;
+	font-weight: 600;
+	text-align: right;
+}
+
+.number {
+	display: inline-block;
+	color: #fd3c94;
+	font-weight: 600;
+	text-align: left;
+}
+
+.blue.title { 
+	color:#42aec8;
+}
+
+.pink.title {
+	color: #fd3c94;
+}
+
+.related-products {
+	margin-bottom: -5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background-color: #0d001d;
+}
+
+canvas.confetti {
+	height: 1000px;
+	width: 100%;
+	position: absolute;
+	top: 400px;
+  left: 0;
+  z-index: 9;
+  margin-top: -1000px;
+}
+
+.header {
+	z-index: 99;
+}
+
+@media screen and (max-width: 980px) {
+  
+  .calculator {
+	  background: linear-gradient(#020303, #52045A);
+	  height: auto;
+	  padding: 40px 20px;
+	  border-radius: 20px;
+  }
+  
+  label.dose {
+		width: 48%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.plane {
+		width: 800px;
+	  margin-left: -375px;
+	}
+
+}
+
+
+
+.onsale {
+	background: url(./images/sale-badge.svg) no-repeat center !important;
+	background-size: 100% auto !important;
+}
+
+
+
+
