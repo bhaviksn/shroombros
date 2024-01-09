@@ -11,27 +11,29 @@
 
 ?>
 
-		</main><!-- .main -->
+</main><!-- .main -->
 
-		<footer class="footer">
-			<?php get_template_part( 'components/common/boat' ); ?>
-			
-			
-			<?php if ( is_page_template( 'templates/calculator.php' ) ) : ?>
-				<?php get_template_part( 'components/product/related-calc' ); ?>
-			<?php endif; ?>
-			
-			<?php if ( ! is_page_template( 'templates/calculator.php' ) ) : ?>
-				<?php get_template_part( 'components/footer/blog' ); ?>
-			<?php endif; ?>
-			
-			<?php get_template_part( 'components/footer/top' ); ?>
+<footer class="footer">
+  <?php get_template_part( 'components/common/boat' ); ?>
 
-			<?php get_template_part( 'components/footer/bottom' ); ?>
-		</footer>
 
-		<?php wp_footer(); ?>
+  <?php if ( is_page_template( 'templates/calculator.php' ) ) : ?>
+  <?php get_template_part( 'components/product/related-calc' ); ?>
+  <?php endif; ?>
 
-	</body>
+  <?php if ( ! is_page_template( 'templates/calculator.php' ) ) : ?>
+  <?php get_template_part( 'components/footer/blog' ); ?>
+  <?php endif; ?>
+
+  <?php get_template_part( 'components/footer/top' ); ?>
+
+  <?php get_template_part( 'components/footer/bottom' ); ?>
+</footer>
+
+<?php get_template_part( 'components/footer/cta-popup' ); ?>
+
+<?php wp_footer(); ?>
+
+</body>
 
 </html>

@@ -578,3 +578,11 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 // Show price under variation price dropdown even if all variations are the same price
 add_filter( 'woocommerce_show_variation_price', function() { return TRUE;} );
+
+function mobile_popup_options(){
+    global $popup_buttons;
+    $popup_buttons = get_field('popup_buttons', 'option');
+}
+
+// Define it immediately after `init` in a high priority.
+add_action('init', 'mobile_popup_options', 1, 1);
