@@ -250,6 +250,8 @@ jQuery(document).ready(function ($) {
 				$('.mobile-cont__img-cont .mobile-cont__img.' + classNaame).addClass(
 					'active',
 				);
+			} else {
+				$('.mobile-cont__img-cont .mobile-cont__img').removeClass('active');
 			}
 		});
 

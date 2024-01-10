@@ -493,7 +493,9 @@ canvas.confetti {
 	transform-origin: bottom left;
 	z-index: 10000;
 }
-
+.mobile-cont.hide_on_mobile {
+	display: none;
+}
 .mobile-cont:before {
 	content: ' ';
 	position: absolute;
@@ -784,6 +786,9 @@ canvas.confetti {
 @media (min-width: 767px) {
 	.mobile-cont {
 		transform: scale(0.6) translateY(calc(100% - 185px));
+	}
+	.mobile-cont.hide_on_mobile {
+		display: block;
 	}
 	.mobile-cont.active {
 		transform: scale(0.6) translateY(0);
