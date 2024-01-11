@@ -580,9 +580,9 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 add_filter( 'woocommerce_show_variation_price', function() { return TRUE;} );
 
 function mobile_popup_options(){
-    global $popup_buttons, $hide_popup_on_mobile;
+    global $popup_buttons, $default_popup_config;
     $popup_buttons = get_field('popup_buttons', 'option');
-    $hide_popup_on_mobile = get_field('hide_on_mobile', 'option');
+    $default_popup_config = get_field('default_popup_settings', 'option');
 }
 
 // Define it immediately after `init` in a high priority.

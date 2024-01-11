@@ -252,6 +252,9 @@ jQuery(document).ready(function ($) {
 				);
 			} else {
 				$('.mobile-cont__img-cont .mobile-cont__img').removeClass('active');
+				$('.mobile-cont__img-cont .mobile-cont__img:first-child').addClass(
+					'active',
+				);
 			}
 		});
 

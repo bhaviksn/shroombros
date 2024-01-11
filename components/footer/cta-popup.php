@@ -1,13 +1,18 @@
 <?php
-  global $popup_buttons, $hide_popup_on_mobile;
+  global $popup_buttons, $default_popup_config;
 ?>
-<div class="mobile-cont <?php echo $hide_popup_on_mobile ? 'hide_on_mobile' : '';?>">
+<div class="mobile-cont <?php echo $default_popup_config['hide_on_mobile'] ? 'hide_on_mobile' : '';?>">
   <img class="mobile-cont__mobile" src="<?php echo get_template_directory_uri(  );?>/images/mobile.png" alt="" />
   <div class="mobile-cont__click">
     <img class="mobile-cont__close-img" src="<?php echo get_template_directory_uri(  );?>/images/close.png" alt="" />
     <img class="mobile-cont__open-img" src="<?php echo get_template_directory_uri(  );?>/images/click.png" alt="" />
   </div>
+
   <div class="mobile-cont__img-cont">
+    <?php if($default_popup_config['default_image']) { ?>
+    <img src="<?php echo $default_popup_config['default_image']['url'];?>" alt="Phone screen"
+      class="mobile-cont__img active">
+    <?php }?>
     <?php foreach($popup_buttons as $button) { ?>
     <?php if($button['image__video']) {?>
     <iframe width="304" height="355" src="https://www.youtube.com/embed/<?php echo $button['youtube_video_id'];?>"
